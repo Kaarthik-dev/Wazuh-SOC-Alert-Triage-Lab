@@ -1,15 +1,16 @@
-## Problem
-Agent enrollment failed despite correct configuration.
+## Manager–Agent Version Mismatch
 
-## Root Cause
-Agent version (4.x) was higher than manager version (4.7.5).
-Wazuh requires agent ≤ manager version.
+### Problem
+Agent enrollment failed after installation despite
+correct configuration.
 
-## Fix
-- Removed old agent from manager
-- Installed matching agent version
-- Re-enrolled agent
+### Root Cause
+The installed agent version was higher than the
+manager version, which is unsupported.
 
-## Validation
-Agent status: Active
-Alerts received in dashboard
+### Resolution
+The agent was downgraded to match the manager version
+and re-enrolled.
+
+### Outcome
+The agent connected successfully and alerts were received.
