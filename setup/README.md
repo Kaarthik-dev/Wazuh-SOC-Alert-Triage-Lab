@@ -1,19 +1,12 @@
-# Wazuh SIEM Setup & Installation
+## Setup & Installation
 
-## Objective
-Deploy a fully functional Wazuh SIEM (Manager, Indexer, Dashboard) in a lab
-environment and resolve installation and platform-level issues.
+This directory documents key setup challenges encountered during
+the deployment of the Wazuh SIEM lab.
 
-## Issues Encountered
-- Unsupported OS version warning during installation
-- Dashboard service failing due to Node.js memory limits
-- Networking issues related to NAT and Host-only adapters
+Rather than installation steps, the focus is on:
+- Errors encountered during setup
+- Root cause analysis
+- Correct remediation actions
 
-## Key Fixes
-- Overrode OS compatibility check for Ubuntu 24.04
-- Tuned Node.js memory allocation for Wazuh Dashboard
-- Implemented dual-network setup (NAT + Host-only)
-
-## Outcome
-Wazuh Manager, Indexer, and Dashboard successfully deployed and accessible.
-
+These issues reflect real-world deployment challenges faced
+in SOC and enterprise environments.
