@@ -1,0 +1,13 @@
+[ Linux Agent ]
+     |
+     |  (Logs, FIM, Syscheck)
+     |
+[ Wazuh Manager ]
+     |
+     |  (Alerts / Events)
+     |
+[ Wazuh Indexer ]
+     |
+     |  (Search / Dashboards)
+     |
+[ Wazuh Dashboard ]
