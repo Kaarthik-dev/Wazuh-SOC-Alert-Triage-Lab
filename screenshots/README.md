@@ -1,10 +1,13 @@
-# Screenshots & Evidence
+## Screenshots & Evidence
 
-This directory contains screenshots proving:
-- Active agent connection
-- Authentication and SSH alerts
-- File Integrity Monitoring alerts
-- Wazuh dashboard visibility
+This directory contains screenshots that provide evidence of
+successful Wazuh SIEM deployment and SOC alert validation.
 
-These screenshots serve as evidence of successful detection and SOC validation.
+### Evidence Included
+- Active agent communication with Wazuh Manager
+- Linux authentication and SSH failure alerts
+- File Integrity Monitoring (FIM) alerts
+- Security events visible in the Wazuh dashboard
 
+These screenshots demonstrate validated detections
+and SOC-style alert triage.
