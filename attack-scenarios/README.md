@@ -1,15 +1,20 @@
-# Attack Scenarios Simulated
+## Attack Scenarios Overview
 
-## SSH Brute Force
-Simulated repeated SSH authentication failures to validate brute-force
-detection rules.
+This directory contains simulated attack scenarios used to validate
+Wazuh SIEM detection and SOC alert triage workflows.
 
-## Unauthorized File Modification
-Created and modified files under /etc to trigger File Integrity Monitoring alerts.
+Each scenario focuses on common, real-world security events
+encountered by SOC analysts.
 
-## SOC Perspective
-Each scenario was validated through:
-- Agent-side logs
-- Wazuh Security Events dashboard
-- Alert severity and rule analysis
+### Included Scenarios
 
+- **SSH Brute Force**  
+  Simulates repeated authentication failures to validate detection
+  of brute-force login attempts using Linux authentication logs.
+
+- **Unauthorized File Modification (FIM)**  
+  Simulates unauthorized changes to protected system files to validate
+  File Integrity Monitoring (syscheck) alerts.
+
+Each scenario includes detection logic, observed alerts, and
+SOC analyst response considerations.
