@@ -1,23 +1,13 @@
-# Detection Engineering & File Integrity Monitoring
+## Detection & File Integrity Monitoring
 
-## Authentication Log Monitoring
-Monitored Linux authentication logs (auth.log) to detect:
-- SSH login failures
-- Successful authentication events
-- Privilege escalation using sudo and PAM
+This directory documents how security detections were implemented,
+validated, and troubleshot in the Wazuh SOC lab.
 
-## File Integrity Monitoring (FIM)
-Configured syscheck to monitor critical directories such as /etc
-with baseline initialization and realtime detection enabled.
+It focuses on:
+- Linux authentication log analysis
+- File Integrity Monitoring (FIM)
+- Understanding why alerts trigger or fail
+- SOC-style detection validation
 
-## Challenges
-- No alerts due to missing FIM baseline
-- Misunderstanding between log analysis and file integrity monitoring
-
-## Resolution
-- Initialized FIM baseline correctly
-- Enabled realtime monitoring and content change reporting
-
-## Outcome
-Unauthorized file modifications successfully generated integrity alerts.
-
+The files in this directory demonstrate practical detection engineering
+and alert triage from a SOC analyst perspective.
